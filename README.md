@@ -1,5 +1,5 @@
 # movie_rating_app
-
+Nguyen Dang Khoa
 ## Project setup
 ```
 npm install
