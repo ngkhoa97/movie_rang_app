@@ -61,7 +61,8 @@ router.get('/api/logout', (req, res) => {
 router.get('/', (req, res) => {
   res.json({ message: 'API Initialized!' });
 });
-const port = process.env.API_PORT || 8081;
+// const port = process.env.API_PORT || 8081;
+const port = process.env.PORT || 8081;
 app.use('/', router);
 const server = app.listen(port, () => {
   console.log(`api running on port ${port}`);
