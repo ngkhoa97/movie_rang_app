@@ -85,7 +85,7 @@ export default {
             data: {
               rate: rating,
             },
-            url: `http://localhost:8081/movies/rate/${movieId}`,
+            url: `/movies/rate/${movieId}`,
             headers: {
               'Content-Type': 'application/json',
             },
@@ -109,7 +109,7 @@ export default {
     async getMovie() {
       return axios({
         method: 'get',
-        url: `http://localhost:8081/movie/${this.$route.params.id}`,
+        url: `/movie/${this.$route.params.id}`,
       })
         .then((res) => {
           // console.log(res.data.movie);
